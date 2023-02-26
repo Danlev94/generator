@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 import openai
+import os
 
 app = Flask(__name__)
 
-openai.api_key = "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"
+openai.api_key = os.environ["OPEN_API_KEY"]
 model_engine = "text-davinci-002"
 max_tokens = 200
 
