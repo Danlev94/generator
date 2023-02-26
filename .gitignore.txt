@@ -1,0 +1,13 @@
+# Python-specific files
+*.pyc
+__pycache__/
+venv/
+*.egg-info/
+
+# Flask-specific files
+instance/
+.webassets-cache
+.env
+
+# OpenAI API key file
+openai_api_key.txt
